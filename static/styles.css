@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #101014;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+/** ------------------- Layout CSS ------------------- */
+
+.navBlock {
+  position: relative;
+}
+
+.navBlock::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: saturate(1.5);
+}
+
+/* Mobile Header section  */
+
+.view_block {
+  backdrop-filter: saturate(1.5);
+}
+
+.view_block .mobile_header_section {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 4rem;
+  display: none;
+}
+
+.mobile_header_section::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  margin: 0 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08) 3%,
+    rgba(248, 248, 248, 0.23) 48%,
+    rgba(255, 255, 255, 0.06) 97%
+  );
+}
+
+.view_block .mobile_header_section .blur_bg::before {
+  content: "";
+  position: absolute;
+  inset: -1px 0px -35%;
+  pointer-events: none;
+  user-select: none;
+  backdrop-filter: blur(12px);
+  mask-image: linear-gradient(to bottom, black 3.4rem, transparent);
+}
+
+/* Main changeable Component  */
+/* 
+.main_editable_section{
+  padding-top: 4rem;
+} */
+
+/*  Mobile - Nav */
+@media screen and (max-width: 640px) {
+  .navBlock {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(1rem);
+    z-index: 4;
+  }
+
+  .view_block .mobile_header_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
