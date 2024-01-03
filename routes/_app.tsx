@@ -10,6 +10,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/Stylesheet/error_style.css" />
         <link rel="stylesheet" href="/Stylesheet/nav_style.css" />
         <link rel="stylesheet" href="/Stylesheet/home_styles.css" />
+        <link rel="stylesheet" href="/Stylesheet/user_style.css" />
       </head>
       <body>
         <Component />

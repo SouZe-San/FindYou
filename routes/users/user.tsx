@@ -1,12 +1,10 @@
 const User = () => {
   return (
-    <div>
-      <h1>
-        This is User Page <br />
-        don't know who will be appear here
-        <br />
-        its you fucking bitch !!!!!
-      </h1>
+    <div className="p-4">
+      <div className="greeting sm:mt-8">
+        <h1 className="inline text-[2rem] md:text-5xl">Welcome</h1>{" "}
+        <span>{"${user name}"}</span>
+      </div>
     </div>
   );
 };

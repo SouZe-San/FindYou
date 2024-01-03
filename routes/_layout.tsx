@@ -12,7 +12,7 @@ export default function Layout(props: PageProps) {
       <div className="grow flex flex-col view_block">
         <div className="mobile_header_section">
           <div className="blur-bg"></div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center relative">
             <h1
               style={{
                 fontSize: "2.5rem",

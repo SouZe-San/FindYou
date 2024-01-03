@@ -59,7 +59,7 @@ body {
   );
 }
 
-.view_block .mobile_header_section .blur_bg::before {
+.blur-bg::before {
   content: "";
   position: absolute;
   inset: -1px 0px -35%;
@@ -70,10 +70,10 @@ body {
 }
 
 /* Main changeable Component  */
-/* 
-.main_editable_section{
-  padding-top: 4rem;
-} */
+
+.main_editable_section {
+  overflow-y: scroll;
+}
 
 /*  Mobile - Nav */
 @media screen and (max-width: 640px) {

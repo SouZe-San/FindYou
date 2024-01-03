@@ -53,8 +53,8 @@
 h3.description {
   font-family: "Poppins", sans-serif;
   color: #bfbfbff0;
-  margin-bottom: 2rem;
-  padding: 1rem 3rem;
+  margin-bottom: 5rem;
+  padding: 1rem 5rem;
   font-size: 1.2rem;
   line-height: 1.3;
   line-break: auto;
@@ -70,26 +70,47 @@ h3.description {
 }
 
 .goBtn {
-  padding: 1.3rem 5rem;
+  position: relative;
+  padding: 1.6rem 6rem;
   border-radius: 15px;
   background: #72727224;
   border-color: #ffffff26;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-out;
+  margin-bottom: 4rem;
 }
 
 .goBtn:hover {
   background: #7272724d;
   /* scale: 1.02; */
-  font-size: 1.1rem;
+  font-size: 1.01rem;
+  color: #fff;
+  box-shadow: 0px 0 14px -2px #fffdfdbd, 0 0 6px 0px #696262bf;
 }
 
 .img_sec {
   /* width: clamp(13rem, 62px, 100px); */
-  background: white;
+  /* background: white; */
   border-radius: 12px;
   margin-right: 10px;
 }
 
+.tech_item {
+  grid-template-columns: 1fr auto;
+  transition: all 0.3s ease-out;
+  padding: 10px 2rem 10px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(4rem);
+  min-height: 6rem;
+  align-content: center;
+}
+
+.tech_item:hover {
+  background: #28252f66;
+}
+
+.tech_item .details {
+  align-self: center;
+}
 @media screen and (max-width: 640px) {
   .Intro_head {
     font-size: 2.7rem;
@@ -113,6 +134,11 @@ h3.description {
     font-size: 3.3rem;
     left: -16px;
   }
+
+  .bg_img_section {
+    top: 10%;
+  }
+
   h3.description {
     padding: 0;
     font-size: 1.03rem;
@@ -128,5 +154,8 @@ h3.description {
 
   .Intro_tech ul {
     list-style: initial;
+  }
+  .img_sec {
+    width: 5rem;
   }
 }
