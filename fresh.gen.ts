@@ -13,6 +13,7 @@ import * as $users_user from "./routes/users/user.tsx";
 import * as $MenuButton_MenuButton from "./islands/MenuButton/MenuButton.tsx";
 import * as $NavButton_NavButton from "./islands/NavButton/NavButton.tsx";
 import * as $SideNav_NavBlock from "./islands/SideNav/NavBlock.tsx";
+import * as $UserPage_User from "./islands/UserPage/User.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -30,6 +31,7 @@ const manifest = {
     "./islands/MenuButton/MenuButton.tsx": $MenuButton_MenuButton,
     "./islands/NavButton/NavButton.tsx": $NavButton_NavButton,
     "./islands/SideNav/NavBlock.tsx": $SideNav_NavBlock,
+    "./islands/UserPage/User.tsx": $UserPage_User,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

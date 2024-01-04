@@ -23,7 +23,7 @@ nav {
 
 .nav_items::before {
   content: "  ";
-  width: 2rem;
+  width: 2.5rem;
   height: 3.8rem;
   position: absolute;
   margin-top: 14px;

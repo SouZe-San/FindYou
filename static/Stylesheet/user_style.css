@@ -1,9 +1,115 @@
+.user_section {
+  padding: 1rem 0.5rem;
+  border: 1px solid #ffffff12;
+  background: #d9d0d005;
+  backdrop-filter: blur(7rem);
+  border-radius: 10px;
+}
+
 .greeting {
   h1 {
-    font-size: 3.3rem;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(211, 211, 211, 0.67))
       padding-box text;
     color: unset;
+  }
+}
+
+.header_name {
+  h1 {
+    word-spacing: -6px;
+    /* font-weight: 600; */
+  }
+}
+
+.gitBtn {
+  padding: 3px 10px;
+  border: 1px solid #ffffff30;
+  margin-top: 1rem;
+  border-radius: 7px;
+  background: #d7d1d10f;
+  transition: background 0.2s ease-in-out;
+}
+.gitBtn:hover {
+  background: #d7d1d126;
+}
+
+.details_tag {
+  font-size: 2.4rem;
+}
+.special_box {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ffffff1c;
+}
+.contact_details,
+.user_contact_details_text {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 5px;
+  }
+  span {
+    margin-left: 5px;
+  }
+}
+.box_shadow_withSome_bg {
+  border-bottom: 1px solid #ffffff17;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #39393914;
+  box-shadow: 1px 5px 9px 2px #1313176b, inset 0 0 6px #7d7d7d1c;
+}
+
+@media screen and (min-width: 1050px) {
+  .user_section {
+    width: 84%;
+    /* padding: 1.5rem; */
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 886px) {
+  .name_section {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 870px) {
+  .header_img {
+    width: 10rem;
+  }
+  .name_section {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
+  .header_name h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 700px) {
+  .header_section {
+    flex-direction: column;
+  }
+  .name_section {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  .user_section {
+    padding: 2rem;
+  }
+  .header_name h1 {
+    font-size: 3.25rem;
+  }
+
+  /* .user_popularity {
+    padding: 0 2rem 1rem 2rem;
+  } */
+}
+
+@media screen and (max-width: 450px) {
+  .header_name h3 {
+    margin-top: 4px;
   }
 }
