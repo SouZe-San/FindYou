@@ -1,16 +1,17 @@
-const UserDetails = () => {
+import { DetailsProps } from "../../utils/interfaceCol.ts";
+
+interface UserDetailsProps {
+  userDetails: DetailsProps;
+}
+
+const UserDetails = ({ userDetails }: UserDetailsProps) => {
   return (
     <section className="user_details mt-8 lg:p-8 md:px-6 px-4 flex flex-col gap-4">
       {/* User Bio */}
       <div className="user_bio special_box">
         <h1 className="details_tag">User Bio -</h1>
         <p className="user_bio_text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptate, quae, quos voluptatum, voluptas quas nemo officiis
-          voluptatibus doloremque quibusdam quod. Quibusdam, voluptas
-          voluptates. Quisquam voluptate, quae, quos voluptatum, voluptas quas
-          nemo officiis voluptatibus doloremque quibusdam quod. Quibusdam,
-          voluptas voluptates.
+          {userDetails.bio}
         </p>
       </div>
 
@@ -21,12 +22,12 @@ const UserDetails = () => {
           <div className="user_popularity gap-5 ">
             <div className="user_followers details_item special_box">
               <h1 className="user_followers_count">
-                <span>Followers</span>: 0
+                <span>Followers</span>: {userDetails.followers}
               </h1>
             </div>
             <div className="user_following details_item special_box">
               <h1 className="user_following_count">
-                <span>Following</span>: 0
+                <span>Following</span>: {userDetails.following}
               </h1>
             </div>
           </div>
@@ -34,14 +35,14 @@ const UserDetails = () => {
           <div className="user_repository details_item special_box">
             <div className="user_repository_url">
               <h1 className="user_repository_url_text">
-                <span>Repository</span>: 23
+                <span>Repository</span>: {userDetails.public_repos}
               </h1>
             </div>
           </div>
 
           <div className="user_event details_item">
             <h1 className="user_event_text">
-              <span>Recent Event</span>: 10
+              <span>Recent Event</span>: {userDetails.eventsNumber}
             </h1>
           </div>
         </div>
@@ -64,7 +65,9 @@ const UserDetails = () => {
               </svg>
               Email :
             </h1>
-            <span>email</span>
+            <span>
+              {userDetails.email === null ? "No Mail" : userDetails.email}
+            </span>
           </div>
           <div className="contact_details special_box">
             <h1 className="user_contact_details_text">
@@ -82,7 +85,11 @@ const UserDetails = () => {
               </svg>
               Twitter :
             </h1>
-            <span>twitter</span>
+            <span>
+              {userDetails.twitter_username === null
+                ? "Not Available"
+                : userDetails.twitter_username}
+            </span>
           </div>
           <div className="contact_details special_box">
             <h1 className="user_contact_details_text">
@@ -99,7 +106,11 @@ const UserDetails = () => {
               </svg>
               Company :
             </h1>
-            <span>company</span>
+            <span>
+              {userDetails.company === null
+                ? "Not Available"
+                : userDetails.company}
+            </span>
           </div>
           <div className="contact_details special_box">
             <h1 className="user_contact_details_text">
@@ -117,7 +128,11 @@ const UserDetails = () => {
               </svg>
               Location :
             </h1>
-            <span>location</span>
+            <span>
+              {userDetails.location === null
+                ? "Not Available"
+                : userDetails.location}
+            </span>
           </div>
           <div className="contact_details special_box">
             <h1 className="user_contact_details_text">
@@ -134,7 +149,9 @@ const UserDetails = () => {
               </svg>
               Joined :
             </h1>
-            <span>joined</span>
+            <span className="ml-2">
+              {userDetails.updated_at.split("T")[0]}
+            </span>
           </div>
           <div className="contact_details ">
             <h1 className="user_contact_details_text">
@@ -152,7 +169,9 @@ const UserDetails = () => {
               </svg>
               Last Active :
             </h1>
-            <span>updated</span>
+            <span>
+              {userDetails.updated_at.split("T")[0]}
+            </span>
           </div>
         </div>
       </div>

@@ -1,0 +1,38 @@
+export const apiData = {
+  "login": "SouZe-San",
+  "id": 103335953,
+  "node_id": "U_kgDOBijIEQ",
+  "avatar_url": "https://avatars.githubusercontent.com/u/103335953?v=4",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/SouZe-San",
+  "html_url": "https://github.com/SouZe-San",
+  "followers_url": "https://api.github.com/users/SouZe-San/followers",
+  "following_url":
+    "https://api.github.com/users/SouZe-San/following{/other_user}",
+  "gists_url": "https://api.github.com/users/SouZe-San/gists{/gist_id}",
+  "starred_url":
+    "https://api.github.com/users/SouZe-San/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/SouZe-San/subscriptions",
+  "organizations_url": "https://api.github.com/users/SouZe-San/orgs",
+  "repos_url": "https://api.github.com/users/SouZe-San/repos",
+  "events_url": "https://api.github.com/users/SouZe-San/events{/privacy}",
+  "received_events_url":
+    "https://api.github.com/users/SouZe-San/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": "Soumyajit",
+  "company": null,
+  "blog": "",
+  "location": null,
+  "email": null,
+  "hireable": null,
+  "bio":
+    "Student of The Neotia University || 3rd Year || Front-end Developer || Machine Learning (still beginner) ",
+  "twitter_username": null,
+  "public_repos": 23,
+  "public_gists": 0,
+  "followers": 4,
+  "following": 1,
+  "created_at": "2022-04-09T20:31:42Z",
+  "updated_at": "2024-01-01T10:09:07Z",
+};

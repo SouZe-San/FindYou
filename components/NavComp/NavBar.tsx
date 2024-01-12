@@ -6,6 +6,7 @@ interface NavItem {
   name: string;
   before_bg: string;
   href: string;
+  icon_url: string;
 }
 const NavBar = ({ nav_route }: { nav_route: string }) => {
   // const active_item = useSignal(0);
@@ -14,16 +15,19 @@ const NavBar = ({ nav_route }: { nav_route: string }) => {
       name: "Home",
       before_bg: "before:bg-[#fc15ab]",
       href: "/",
+      icon_url: "/assets/nav_icon/home.svg",
     },
     {
       name: "Watashi",
       before_bg: "before:bg-cyan-400",
       href: "/users/user",
+      icon_url: "/assets/nav_icon/user.svg",
     },
     {
       name: "FindU",
       before_bg: "before:bg-[#04ff96]",
       href: "/users/find_user",
+      icon_url: "/assets/nav_icon/detective.svg",
     },
   ];
 
@@ -42,8 +46,7 @@ const NavBar = ({ nav_route }: { nav_route: string }) => {
             key={index}
             name={item.name}
             before_bg={item.before_bg}
-            // index={index}
-            // active_item={active_item}
+            icon_url={item.icon_url}
             href={item.href}
             nav_route={nav_route}
           />

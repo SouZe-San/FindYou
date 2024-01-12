@@ -1,10 +1,17 @@
+import InputBlock from "../../islands/InputBlock/InputBlock.tsx";
+
 export default function find_user() {
   return (
-    <div>
-      <h1>
-        Here will be appear a Input field where u given one bastard's name for
-        search and see his/her growth
-      </h1>
+    <div className=" md:px-12 p-4">
+      <div className="header">
+        <h1>
+          I will Find You ☠️
+        </h1>
+      </div>
+
+      <section className="input_field mt-4 flex flex-col  w-full">
+        <InputBlock />
+      </section>
     </div>
   );
 }

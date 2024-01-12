@@ -6,10 +6,13 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $_layout from "./routes/_layout.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
+import * as $api_user_eventdetails from "./routes/api/user/eventdetails.ts";
+import * as $api_user_search from "./routes/api/user/search.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $users_find_user from "./routes/users/find_user.tsx";
 import * as $users_user from "./routes/users/user.tsx";
+import * as $InputBlock_InputBlock from "./islands/InputBlock/InputBlock.tsx";
 import * as $MenuButton_MenuButton from "./islands/MenuButton/MenuButton.tsx";
 import * as $NavButton_NavButton from "./islands/NavButton/NavButton.tsx";
 import * as $SideNav_NavBlock from "./islands/SideNav/NavBlock.tsx";
@@ -22,12 +25,15 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/_layout.tsx": $_layout,
     "./routes/api/joke.ts": $api_joke,
+    "./routes/api/user/eventdetails.ts": $api_user_eventdetails,
+    "./routes/api/user/search.ts": $api_user_search,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
     "./routes/users/find_user.tsx": $users_find_user,
     "./routes/users/user.tsx": $users_user,
   },
   islands: {
+    "./islands/InputBlock/InputBlock.tsx": $InputBlock_InputBlock,
     "./islands/MenuButton/MenuButton.tsx": $MenuButton_MenuButton,
     "./islands/NavButton/NavButton.tsx": $NavButton_NavButton,
     "./islands/SideNav/NavBlock.tsx": $SideNav_NavBlock,

@@ -5,7 +5,7 @@ interface NavButtonProps {
   before_bg: string;
   href: string;
   nav_route: string;
-  // icon: string;
+  icon_url: string;
   // index: number;
   // active_item: Signal<number>;
 }
@@ -28,7 +28,8 @@ const NavButton = (navProps: NavButtonProps) => {
       >
         {" "}
         <div className="nav_button">
-          {/* ICON */}
+          {/* {navProps.icon} */}
+          <img src={navProps.icon_url} className="w-[1.2rem] mr-3" alt="icon" />
           {navProps.name}
         </div>
       </div>

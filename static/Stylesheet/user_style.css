@@ -16,16 +16,23 @@
   }
 }
 
+.header_img {
+  box-shadow: 3px 1px 8px 5px #1a1a1a;
+  overflow: hidden;
+}
+
 .header_name {
   h1 {
     word-spacing: -6px;
+    /* text-shadow: 8px -2px 10px black, 7px -2px 3px #040404; */
+    text-shadow: 7px 0px 12px black, 5px -2px 3px #040404;
     /* font-weight: 600; */
   }
 }
 
 .gitBtn {
   padding: 3px 10px;
-  border: 1px solid #ffffff30;
+  border: 2px solid #ffffff30;
   margin-top: 1rem;
   border-radius: 7px;
   background: #d7d1d10f;
@@ -33,6 +40,8 @@
 }
 .gitBtn:hover {
   background: #d7d1d126;
+  text-shadow: 2px 1px 1px black;
+  box-shadow: 1px 2px 8px 1px #111111b5;
 }
 
 .details_tag {
@@ -130,11 +139,19 @@
   .right_view_box {
     order: 1;
   }
+
+  .header_name h1 {
+    font-size: 3.8rem;
+  }
 }
 @media screen and (min-width: 700px) and (max-width: 886px) {
   .name_section {
     padding-left: 2rem;
     padding-right: 0;
+  }
+  .header_name h1 {
+    font-size: 3.6rem;
+    letter-spacing: -2.5px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 870px) {
@@ -147,6 +164,7 @@
   }
   .header_name h1 {
     font-size: 3rem;
+    letter-spacing: -2.5px;
   }
 }
 
@@ -157,6 +175,22 @@
   .name_section {
     padding-left: 0;
     text-align: center;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 640px) {
+  .details_sec_box {
+    padding: 0 0 !important;
+  }
+  .details_tag {
+    font-size: 1.5rem;
+  }
+
+  .details_item,
+  .contact_details {
+    font-size: 13px;
+    span {
+      font-size: 10px;
+    }
   }
 }
 @media screen and (min-width: 480px) and (max-width: 640px) {
@@ -179,9 +213,19 @@
   .right_view_box {
     order: 1;
   }
+
+  .header_name h1 {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 450px) {
+  .header_name h1 {
+    letter-spacing: -2.5px;
+  }
   .header_name h3 {
     margin-top: 4px;
+  }
+  .header_img {
+    box-shadow: 1px 1px 7px 3px #1a1a1a;
   }
 }
