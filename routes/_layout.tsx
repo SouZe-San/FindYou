@@ -19,6 +19,7 @@ export default function Layout(props: PageProps) {
               style={{
                 fontSize: "2.5rem",
                 padding: "0rem 1rem",
+                fontFamily: "'Neonderthaw', cursive",
               }}
             >
               FindYou

@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap");
 .logo_section {
   padding: 2rem 1rem;
-  font-size: 2.5rem;
+  font-size: 4.3rem;
   margin-bottom: 1.5rem;
-  /* font-family: "NeverWinter"; */
+  font-family: "Neonderthaw", cursive;
 }
 
 .NavBar_section {
@@ -95,4 +96,10 @@ nav {
 .NavBar_section .bottom_section span.auth_link:hover {
   background: rgba(255, 255, 255, 0.14);
   box-shadow: 2px 2px 7px -1px #8f8f8fbf, inset 2px 2px 4px 0px #75757575;
+}
+
+@media screen and (max-width: 640px) {
+  .logo_section {
+    font-size: 2.8rem;
+  }
 }
