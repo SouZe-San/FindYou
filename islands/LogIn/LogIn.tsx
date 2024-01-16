@@ -1,7 +1,28 @@
-import MailIcon from "./mailIcon.tsx";
-import UserIcon from "./userIcon.tsx";
+import MailIcon from "../../components/LogIn/mailIcon.tsx";
+import UserIcon from "../../components/LogIn/userIcon.tsx";
 
+import { useState } from "preact/hooks";
 const LogIn = () => {
+  const [userName, setUserName] = useState("");
+
+  const handleUserNameChange = (e: Event): void => {
+    const target = e.target as HTMLInputElement;
+    setUserName(target.value);
+  };
+
+  const onSubmitCLick = (e: Event): void => {
+    e.preventDefault();
+    if (userName) {
+      if (localStorage.getItem("userName")) {
+        localStorage.clear();
+        localStorage.setItem("userName", userName);
+      } else {
+        localStorage.setItem("userName", userName);
+      }
+    }
+    setUserName("");
+  };
+
   return (
     <div className=" flex sm:items-start flex-col gap-4 w-full  logIn">
       <div className="form_headLine">
@@ -19,9 +40,10 @@ const LogIn = () => {
             <input
               type="text"
               name="userName"
-              value=""
+              value={userName}
               id=""
               placeholder="Github UseName"
+              onChange={handleUserNameChange}
               required
             />
           </div>
@@ -38,7 +60,7 @@ const LogIn = () => {
           </div>
 
           <button type="submit" className="mt-3">
-            <span>Log In</span>
+            <span onClick={onSubmitCLick}>Log In</span>
           </button>
         </form>
       </section>

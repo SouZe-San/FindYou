@@ -1,4 +1,4 @@
-import LogInPlate from "../components/LogIn/LogIn.tsx";
+import LogInPlate from "../islands/LogIn/LogIn.tsx";
 import { Handlers } from "$fresh/server.ts";
 
 export const handler: Handlers = {
@@ -7,17 +7,7 @@ export const handler: Handlers = {
   },
   async POST(req, ctx) {
     const form = await req.formData();
-    const userName: string | undefined = form.get("userName")?.toString();
 
-    // Add email to list.
-    if (userName) {
-      if (localStorage.getItem("userName")) {
-        localStorage.clear();
-        localStorage.setItem("userName", userName);
-      } else {
-        localStorage.setItem("userName", userName);
-      }
-    }
     // Redirect user to thank you page.
     const headers = new Headers();
     headers.set("location", "/users/user");

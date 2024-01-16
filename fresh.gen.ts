@@ -12,11 +12,15 @@ import * as $login from "./routes/login.tsx";
 import * as $users_find_user from "./routes/users/find_user.tsx";
 import * as $users_user from "./routes/users/user.tsx";
 import * as $InputBlock_InputBlock from "./islands/InputBlock/InputBlock.tsx";
+import * as $LogIn_LogIn from "./islands/LogIn/LogIn.tsx";
 import * as $MenuButton_MenuButton from "./islands/MenuButton/MenuButton.tsx";
 import * as $NavButton_NavButton from "./islands/NavButton/NavButton.tsx";
+import * as $NavLogIn_NavLogSec from "./islands/NavLogIn/NavLogSec.tsx";
 import * as $SearchPage_SearchPage from "./islands/SearchPage/SearchPage.tsx";
 import * as $SideNav_NavBlock from "./islands/SideNav/NavBlock.tsx";
+import * as $UserPage_UseName from "./islands/UserPage/UseName.tsx";
 import * as $UserPage_User from "./islands/UserPage/User.tsx";
+import * as $UserPage_UserPage from "./islands/UserPage/UserPage.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -33,11 +37,15 @@ const manifest = {
   },
   islands: {
     "./islands/InputBlock/InputBlock.tsx": $InputBlock_InputBlock,
+    "./islands/LogIn/LogIn.tsx": $LogIn_LogIn,
     "./islands/MenuButton/MenuButton.tsx": $MenuButton_MenuButton,
     "./islands/NavButton/NavButton.tsx": $NavButton_NavButton,
+    "./islands/NavLogIn/NavLogSec.tsx": $NavLogIn_NavLogSec,
     "./islands/SearchPage/SearchPage.tsx": $SearchPage_SearchPage,
     "./islands/SideNav/NavBlock.tsx": $SideNav_NavBlock,
+    "./islands/UserPage/UseName.tsx": $UserPage_UseName,
     "./islands/UserPage/User.tsx": $UserPage_User,
+    "./islands/UserPage/UserPage.tsx": $UserPage_UserPage,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

@@ -1,4 +1,5 @@
 import NavButton from "../../islands/NavButton/NavButton.tsx";
+import NavLogSec from "../../islands/NavLogIn/NavLogSec.tsx";
 // import { useSignal } from "@preact/signals";
 // Interface for NavItem
 interface NavItem {
@@ -53,22 +54,7 @@ const NavBar = ({ nav_route }: { nav_route: string }) => {
       </nav>
 
       {/* //* ---------- LogIn -----------*/}
-      <section className="bottom_section">
-        Are You not Admin?
-        <a href="/login">
-          <span className="auth_link cursor-pointer ">
-            become One
-          </span>
-        </a>
-        {
-          /*
-
-        -> 1. github google account
-        -> 2. Github user name
-
-         */
-        }
-      </section>
+      <NavLogSec />
     </div>
   );
 };
