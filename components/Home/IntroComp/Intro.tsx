@@ -59,28 +59,34 @@ const Intro = () => {
 
       <h3 className="w-full  description">
         <p>
-          <span className="px-4"></span>Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Maxime, eveniet ullam! Nesciunt tempore, distinctio
-          praesentium natus assumenda recusandae porro unde illum atque,
-          molestias maiores excepturi doloribus doloremque quae, beatae at ?
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem,
-          assumenda sequi est nemo voluptates, voluptas reiciendis perferendis
-          voluptatem tenetur ducimus explicabo,
+          <span className="px-4"></span>
+          What is it Actually ? we present your Github Profile in a stylish look
+          and a beautiful way. we also help you to find other profile by using
+          their userName and present in a amazing way.At FINDyou, we are on a
+          mission to simplify the way you find and connect with GitHub users.
+          Our platform is designed with a passion for fostering collaboration,
+          bridging gaps, and building a vibrant community of developers.
         </p>
         <br />
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-          deleniti optio debitis voluptatum quasi voluptatem vitae vel nobis?
+          This is very User friendly and interactive.We are a team of passionate
+          developers and technology enthusiasts who believe in the power of
+          collaboration. Our journey began with a simple idea: to create a
+          platform that makes it effortless for individuals and teams to
+          discover and connect with like-minded developers across the GitHub
+          universe.
         </p>
         <br />
         <p>
-          <span className="mx-4"></span>Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Officiis, nobis dolorem repudiandae, in distinctio
-          amet quisquam at beatae numquam voluptatum accusantium consectetur
-          natus cupiditate reiciendis reprehenderit dolor, voluptatem fuga.
-          Autem cum totam voluptatem soluta fugiat, a dolorem perferendis ea,
-          nemo dolorum odio quibusdam eaque nisi nostrum magnam repellat amet
-          minus.
+          <span className="mx-4"></span>Use this and enhance your user
+          experience . This will give you a better direction.We envision a world
+          where collaboration knows no boundaries. Whether you're a seasoned
+          developer, a budding coder, or a tech enthusiast, FINDyou is here to
+          empower you. Together, let's break down silos, inspire creativity, and
+          build the future of technology.We invite you to explore, connect with
+          fellow developers, and contribute to the spirit of open collaboration.
+          Your journey in the GitHub community just got a whole lot more
+          exciting.
         </p>
       </h3>
 
