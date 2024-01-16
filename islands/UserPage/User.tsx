@@ -4,7 +4,7 @@ import UserDetails from "../../components/UserPage/UserDetails.tsx";
 import { useEffect, useState } from "preact/hooks";
 import { DetailsProps } from "../../utils/interfaceCol.ts";
 import { ApiData } from "../../utils/interfaceCol.ts";
-
+import { killer_userName } from "../../utils/LogButton.ts";
 const User = ({ userName }: { userName: string }) => {
   const fetchData = async (): Promise<ApiData> => {
     const res = await fetch("/api/user/search", {
@@ -23,23 +23,7 @@ const User = ({ userName }: { userName: string }) => {
     return data.length;
   };
 
-  const [Details, setDetails] = useState<DetailsProps>({
-    html_url: "",
-    avatar_url: "",
-    login: "",
-    name: "",
-    bio: "",
-    followers: 0,
-    following: 0,
-    public_repos: 0,
-    eventsNumber: 0,
-    email: "",
-    twitter_username: "",
-    company: "",
-    location: "",
-    created_at: "",
-    updated_at: "",
-  });
+  const [Details, setDetails] = useState<DetailsProps | null>(null);
   useEffect(() => {
     // fetch Data of user
     const onRender = async () => {
@@ -64,16 +48,22 @@ const User = ({ userName }: { userName: string }) => {
           updated_at: apiData.updated_at,
         };
         setDetails(userDetails);
-
-        console.log(eventNumber);
       } catch (error) {
-        console.log(error);
+        setDetails(null);
       }
     };
-
     onRender();
-  }, []);
+  }, [killer_userName.value]);
 
+  if (!Details) {
+    return (
+      <div className="md:px-12 p-4">
+        <div className="user_section mt-4">
+          <h1 className="text-2xl text-center">User Loading ...</h1>
+        </div>
+      </div>
+    );
+  }
   return (
     <div
       className="sm:p-4 flex flex-col justify-center"

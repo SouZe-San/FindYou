@@ -84,7 +84,7 @@ const Intro = () => {
         </p>
       </h3>
 
-      <a href="/users/user" className="btn_a">
+      <a href="/login" className="btn_a">
         <button class="border goBtn">Get Started</button>
       </a>
 

@@ -1,6 +1,5 @@
 import NavButton from "../../islands/NavButton/NavButton.tsx";
 // import { useSignal } from "@preact/signals";
-
 // Interface for NavItem
 interface NavItem {
   name: string;
@@ -56,9 +55,11 @@ const NavBar = ({ nav_route }: { nav_route: string }) => {
       {/* //* ---------- LogIn -----------*/}
       <section className="bottom_section">
         Are You not Admin?
-        <span className="auth_link cursor-pointer ">
-          become One
-        </span>
+        <a href="/login">
+          <span className="auth_link cursor-pointer ">
+            become One
+          </span>
+        </a>
         {
           /*
 

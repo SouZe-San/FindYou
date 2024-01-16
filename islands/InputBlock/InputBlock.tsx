@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-
+import { killer_userName } from "../../utils/LogButton.ts";
 const InputBlock = () => {
   const [userName, setUserName] = useState("");
 
@@ -8,19 +8,13 @@ const InputBlock = () => {
     setUserName(target.value);
   };
 
-  const handleSubmit = async (e: Event): Promise<void> => {
+  const handleSubmit = (e: Event): void => {
     e.preventDefault();
-    console.log(userName);
-    const res = await fetch("/api/user/search", {
-      method: "POST",
-      body: JSON.stringify({ eventUrl: userName }),
-    });
-    const data = await res.json();
-    console.log("this is Client", data);
+    killer_userName.value = userName;
   };
 
   return (
-    <div className="w-full flex flex-row input_field  items-center">
+    <div className="w-full flex flex-row input_field  items-center input_section">
       <div className="input md:w-1/3 ">
         <input
           type="text"

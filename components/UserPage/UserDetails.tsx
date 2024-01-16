@@ -42,7 +42,7 @@ const UserDetails = ({ userDetails }: UserDetailsProps) => {
 
           <div className="user_event details_item">
             <h1 className="user_event_text">
-              <span>Recent Event</span>: {userDetails.eventsNumber}
+              <span>Event Counts</span>: {userDetails.eventsNumber}
             </h1>
           </div>
         </div>

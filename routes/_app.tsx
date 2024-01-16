@@ -12,6 +12,7 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/Stylesheet/home_styles.css" />
         <link rel="stylesheet" href="/Stylesheet/user_style.css" />
         <link rel="stylesheet" href="/Stylesheet/search_style.css" />
+        <link rel="stylesheet" href="/Stylesheet/login_style.css" />
       </head>
       <body>
         <Component />

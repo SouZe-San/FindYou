@@ -1,5 +1,8 @@
-import InputBlock from "../../islands/InputBlock/InputBlock.tsx";
+// import InputBlock from "../../islands/InputBlock/InputBlock.tsx";
+// import { killer_userName } from "../../utils/LogButton.ts";
+// import UserContainer from "../../islands/UserPage/User.tsx";
 
+import SearchPage from "../../islands/SearchPage/SearchPage.tsx";
 export default function find_user() {
   return (
     <div className=" md:px-12 p-4">
@@ -9,9 +12,7 @@ export default function find_user() {
         </h1>
       </div>
 
-      <section className="input_field mt-4 flex flex-col  w-full">
-        <InputBlock />
-      </section>
+      <SearchPage />
     </div>
   );
 }

@@ -23,7 +23,7 @@
   input[type="text"] {
     font-size: 1.4rem;
     color: #e6e4e4e8;
-    font-family: w;
+    font-family: "Roboto Flex", sans-serif;
   }
   input::placeholder {
     color: #bebbbb9e;
@@ -62,5 +62,16 @@ button.submit_btn {
 @media screen and (min-width: 768px) and (max-width: 990px) {
   .input {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .input_section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .input input::placeholder {
+    font-size: 1rem;
   }
 }

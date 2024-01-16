@@ -86,7 +86,13 @@ nav {
   margin-left: 5px;
   font-size: 14px;
   border: 1px solid rgba(255, 255, 255, 0.2196078431);
-  padding: 1px 8px;
+  padding: 5px 10px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.1098039216);
-}/*# sourceMappingURL=nav_style.css.map */
+  transform: all 0.3s ease-in;
+}
+
+.NavBar_section .bottom_section span.auth_link:hover {
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 2px 2px 7px -1px #8f8f8fbf, inset 2px 2px 4px 0px #75757575;
+}

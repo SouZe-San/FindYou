@@ -1,15 +1,5 @@
 import UserContainer from "../../islands/UserPage/User.tsx";
 
-const eventUrl = "ANurag08";
-const eventLength = async () => {
-  const res = await fetch("/api/user/search", {
-    method: "POST",
-    body: JSON.stringify({ eventUrl }),
-  });
-  const data = await res.json();
-  console.log("this is Client", data);
-};
-
 const User = () => {
   return (
     <div className=" md:px-12 p-4">
@@ -19,7 +9,7 @@ const User = () => {
       </div>
 
       <section className="user_section mt-4">
-        <UserContainer userName="souze-san" />
+        <UserContainer userName="alfaArghya" />
       </section>
     </div>
   );
