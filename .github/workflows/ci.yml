@@ -14,30 +14,32 @@ on:
   pull_request:
     branches: ["main"]
 
-permissions:
-  contents: read
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
 
+    permissions:
+        id-token: write # Needed for auth with Deno Deploy
+        contents: read # Needed to clone the repository
+
     steps:
-      - name: FINDYOU
-        uses: actions/checkout@v3
+        - name: Clone repository
+          uses: actions/checkout@v3
 
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
+        - name: Setup Deno
+          uses: denoland/setup-deno@v1
+          with:
+            deno-version: v1.x
 
-      # Uncomment this step to verify the use of 'deno fmt' on each commit.
-      - name: Build step
-        run: deno task build
+        # Uncomment this step to verify the use of 'deno fmt' on each commit.
+        - name: Build step
+          run: deno task build
 
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: "example-project"
-          entrypoint: "./main.ts"
+        - name: Upload to Deno Deploy
+          uses: denoland/deployctl@v1
+          with:
+            project: "FINDYOU"
+            entrypoint: "./main.ts"
 
