@@ -1,6 +1,5 @@
 import UserProfile from "../../components/UserPage/UserProfile.tsx";
 import UserDetails from "../../components/UserPage/UserDetails.tsx";
-// import { apiData } from "../../utils/apiData.js";
 import { useEffect, useState } from "preact/hooks";
 import { DetailsProps } from "../../utils/interfaceCol.ts";
 import { ApiData } from "../../utils/interfaceCol.ts";

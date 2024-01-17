@@ -1,5 +1,9 @@
 import SearchPage from "../../islands/SearchPage/SearchPage.tsx";
-export default function find_user() {
+import { FunctionComponent, h } from "preact";
+
+// interface FindUserProps {}
+
+const find_user: FunctionComponent = () => {
   return (
     <div className=" md:px-12 p-4">
       <div className="header">
@@ -11,4 +15,5 @@ export default function find_user() {
       <SearchPage />
     </div>
   );
-}
+};
+export default find_user;

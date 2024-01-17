@@ -1,7 +1,7 @@
 import InputBlock from "../InputBlock/InputBlock.tsx";
 import UserContainer from "../UserPage/User.tsx";
 import { killer_userName } from "../../utils/LogButton.ts";
-
+import { FunctionComponent, h } from "preact";
 function UserNotFind() {
   return (
     <div className="md:px-12 p-4">
@@ -11,7 +11,7 @@ function UserNotFind() {
     </div>
   );
 }
-const SearchPage = () => {
+const SearchPage: FunctionComponent = () => {
   return (
     <>
       <section className="input_field mt-4 flex flex-col  w-full">
