@@ -17,6 +17,12 @@ body {
 }
 
 /** ------------------- Layout CSS ------------------- */
+@import url("/Stylesheet/error_style.css");
+@import url("/Stylesheet/nav_style.css");
+@import url("/Stylesheet/home_styles.css");
+@import url("/Stylesheet/user_style.css");
+@import url("/Stylesheet/search_style.css");
+@import url("/Stylesheet/login_style.css");
 
 .navBlock {
   position: relative;
